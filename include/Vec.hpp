@@ -1,5 +1,5 @@
-#ifndef __VEC_H
-#define __VEC_H
+#ifndef __VEC_HPP
+#define __VEC_HPP
 #include <memory>
 namespace stdAyush
 {
@@ -23,7 +23,6 @@ namespace stdAyush
             uint _curridx;
             T* _currLoc;
         public:
-            Vec(){throw std::bad_alloc();};
             explicit Vec(const uint& len)
                 : _start(new T[len]),
                 _len(len),
@@ -59,4 +58,4 @@ namespace stdAyush
 }
 
 
-#endif //__VEC_H
+#endif //__VEC_HPP
