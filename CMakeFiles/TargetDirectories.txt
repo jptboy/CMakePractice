@@ -1,3 +1,0 @@
-/mnt/f/Documents/cppML/CMakeFiles/rebuild_cache.dir
-/mnt/f/Documents/cppML/CMakeFiles/edit_cache.dir
-/mnt/f/Documents/cppML/CMakeFiles/main.dir

@@ -6,7 +6,15 @@ namespace stdAyush
     using uint = unsigned int;
     template <typename T>
     class Vec
-    {
+    {   
+        /*
+        * @brief
+        * Dynamically resizing array.
+        * 
+        * 
+        * 
+        * 
+        */ 
         private:
             const std::unique_ptr<T> _start;
             uint _len;
@@ -16,7 +24,7 @@ namespace stdAyush
             T* _currLoc;
         public:
             Vec(){throw std::bad_alloc();};
-            Vec(const uint& len)
+            explicit Vec(const uint& len)
                 : _start(new T[len]),
                 _len(len),
                 _sizeOfT(sizeof(T)),
