@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/f/Documents/cppML/src/main.cc
+iostream
+-
+Vec.hpp
+-
+
+/mnt/f/Documents/cppML/src/other.cpp
+
+include/Vec.hpp
+memory
+-
+
