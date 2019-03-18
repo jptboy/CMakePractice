@@ -12,7 +12,7 @@
 * `mkdir ~/bin`
 * `echo 'export PATH="/home/$USER/bin:$PATH"' >> ~/.bashrc`
 * `source ~/.bashrc`
-* `sudo ln -s FolderContainingThisRepo/cppML/bin/NNdemo ~/bin/NNdemo`
+* `sudo ln -s $PATHTOTHISREPO/CMakePractice/bin/NNdemo ~/bin/NNdemo`
 
 # Usage
 * `NNdemo 20`
