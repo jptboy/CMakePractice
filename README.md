@@ -2,9 +2,9 @@
 # But for right now this was just a project to learn CMake
 
 # Build Instructions
-* Enter directory and cmake .
-* make all
-* executable will be in bin/main
+* Enter directory and `cmake .`
+* `make all`
+* executable will be in bin folder
 
 # Add executable to path after building
 
