@@ -14,5 +14,8 @@
 * `source ~/.bashrc`
 * `sudo ln -s FolderContainingThisRepo/cppML/bin/NNdemo ~/bin/NNdemo`
 
-* `remove executable from path`
+# Usage
+* `NNdemo 20`
+
+# remove executable from path
 * `unlink ~/bin/NNdemo`
