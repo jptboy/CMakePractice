@@ -4,6 +4,10 @@
 # Build Instructions For Library And Demo/Test Program
 * Demo executable cppaidemo will be in bin folder
 * Shared Library libcppai.so will be in the lib folder
+* If you wish to build both the library and the demo program
+    * `rm CMakeCache.txt`
+    * `cmake -DBUILDLIB=ON -DBUILDDEMO=ON .`
+    * `make all`
 * If you only wish to build the demo program
     * Make sure the library is present and in the lib folder
     * `rm CMakeCache.txt`
@@ -12,10 +16,6 @@
 * If you only wish to build the library
     * `rm CMakeCache.txt`
     * `cmake -DBUILDLIB=ON -DBUILDDEMO=OFF .`
-    * `make all`
-* If you wish to build both the library and the demo program
-    * `rm CMakeCache.txt`
-    * `cmake -DBUILDLIB=ON -DBUILDDEMO=ON .`
     * `make all`
 * To clean Binaries
     * `make clean`
@@ -35,7 +35,7 @@
 * `unlink ~/bin/cppaidemo`
 
 # How to use this library
-* Make sure you have Boost 1.5.1
+* Make sure you have Boost 1.58
 * Create ~/lib and ~/include folders in your ~ directory
     * `mkdir ~/lib`
     * `echo 'export LD_LIBRARY_PATH="/home/$USER/lib:$LD_LIBRARY_PATH"' >> ~/.bashrc`
