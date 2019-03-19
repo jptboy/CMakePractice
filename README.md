@@ -35,15 +35,17 @@
 * `unlink ~/bin/cppaidemo`
 
 # How to use this library
-
+* Make sure you have Boost 1.5.1
 * Create ~/lib and ~/include folders in your ~ directory
     * `mkdir ~/lib`
+    * `echo 'export LD_LIBRARY_PATH="/home/$USER/lib:$LD_LIBRARY_PATH"' >> ~/.bashrc`
+    * `source ~/.bashrc`
     * `mkdir ~/include`
     * `cp -r <FULLPATHTODIRECTORYTHATCONTAINSTHISREPO>/CMakePractice/lib/* ~/lib/`
     * `cp -r <FULLPATHTODIRECTORYTHATCONTAINSTHISREPO>/CMakePractice/include/* ~/include/`
 
-* `Compile your programs that use this library this way`
-    * Obvious include the header files in your actual code to use this library
+* Compile your programs that use this library this way
+    * Obviously include the header files in your actual code to use this library
     * add these flags to g++
-    * `-I~/include` `-L~/lib` `-lcppai`
-    * e.g if your program is main.cpp `g++ -I~/include -L~/lib main.cpp -lcppai -o main`
+    * `-I ~/include` `-L ~/lib` `-lcppai`
+    * e.g if your program is main.cpp `g++ -std=c++14 -I ~/include -L ~/lib main.cpp -lcppai -o main`
